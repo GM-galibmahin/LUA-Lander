@@ -72,6 +72,9 @@ public class Launcher : MonoBehaviour
        Debug.Log("Landing Angle Score: " + landingAngleScore);
        Debug.Log("Landing Speed Score: " + landingSpeedScore);
 
+        int socre = Mathf.RoundToInt((landingAngleScore + landingSpeedScore) * landingpad.GetScoreMultiplier());
+
+        Debug.Log("Total Score: " + socre);
 
 
     }
